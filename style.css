@@ -1,0 +1,110 @@
+/* Global Styles */
+:root {
+    --ast-global-color-0: #74a84a;
+    --ast-global-color-1: #2c541d;
+    --ast-global-color-2: #000000;
+    --ast-global-color-3: #585858;
+    --ast-global-color-4: #f6f8f5;
+    --ast-global-color-5: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.7em;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.site-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: transparent;
+    padding: 20px 0;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    color: var(--ast-global-color-1);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--ast-global-color-4);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 87px;
+    font-weight: normal;
+    font-family: 'Jost', sans-serif;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+.hero-content h2 {
+    font-size: 41px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--ast-global-color-0);
+    color: var(--ast-global-color-5);
+    text-decoration: none;
+    border-radius: 0;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: none;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: var(--ast-global-color-5);
+    padding: 35px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 15px;
+} 
